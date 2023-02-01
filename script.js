@@ -6,7 +6,9 @@ async function getData() {
   const url = `https://pokeapi.co/api/v2/pokemon?limit=151%27${userInput}`;
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data);
+
+  let resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = data;
 }
 
-getData();
+console.log(getData());

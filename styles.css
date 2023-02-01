@@ -32,3 +32,8 @@ input::placeholder {
   color: rgb(154, 142, 142);
   font-size: 17px;
 }
+
+#result{
+  text-align: center;
+  padding-top: 10px;
+}
