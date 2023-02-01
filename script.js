@@ -9,6 +9,16 @@ async function getData() {
 
   let resultDiv = document.getElementById("result");
   resultDiv.innerHTML = data;
+  console.log(data);
 }
 
 console.log(getData());
+
+/*
+console.log on line 12 displays the api information to console 
+so it pulls api information on pokes
+
+console.log on function getData() displays "promise pending"
+
+figure out how to render pokemon stats and image
+*/
