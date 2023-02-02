@@ -22,3 +22,24 @@ console.log on function getData() displays "promise pending"
 
 figure out how to render pokemon stats and image
 */
+
+/* 
+Below cod not working produces error 
+TypeError: data.forEach is not a function
+
+
+*/
+
+fetch("https://pokeapi.co/api/v2/pokemon?limit=151%27")
+  .then(res => {
+    return res.json();
+  })
+    .then(data => {
+      data.forEach(user => {
+        const markup = `<li>${user.result}</li>`
+          console.log(markup)
+
+        document.querySelector("ul").insertAdjacentElement("beforeend", markup)
+      })
+    })
+      .catch(error => console.log(error))
