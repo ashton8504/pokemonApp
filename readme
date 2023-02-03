@@ -16,3 +16,8 @@ species habitat(s) and English flavor text
 thumbnail (the api does include some small sprites; for larger images another possible source is https://img.pokemondb.net/artw ork/bulbasaur.jpg)
 
 Note: you only need to worry about exact matches, not partials.
+
+
+specifically, you need to learn how to use the tests tab
+
+https://learning.postman.com/docs/writing-scripts/test-scripts/#adding-tests
